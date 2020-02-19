@@ -581,7 +581,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #636363;
 		border-radius: 0.25em;
-		max-width: 650px;
+		/* max-width: 650px; */
 		margin: auto;
 	}
 
@@ -859,25 +859,11 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
-
-				#main > .main > .image.main:first-child {
-					margin: -4em 0 4em -3em;
-					width: calc(100% + 6em);
-				}
-
-		}
-
 		@media screen and (max-width: 736px) {
 
 			#main > .main {
 				padding: 3em ;
 			}
-
-				#main > .main > .image.main:first-child {
-					margin: -3em 0 2em -2em;
-					width: calc(100% + 4em);
-				}
 
 		}
 
@@ -886,11 +872,6 @@ input, select, textarea {
 			#main > .main {
 				padding: 2em ;
 			}
-
-				#main > .main > .image.main:first-child {
-					margin: -3em 0 1.5em -1.5em;
-					width: calc(100% + 3em);
-				}
 
 		}
 
@@ -903,16 +884,6 @@ input, select, textarea {
 				#main > .main {
 					padding: 2em ;
 				}
-
-					#main > .main > .image.main:first-child {
-						margin: -2.5em 0 1.5em -1em;
-						width: calc(100% + 2em);
-						border-radius: 0;
-					}
-
-						#main > .main > .image.main:first-child img {
-							border-radius: 0;
-						}
 
 		}
 
@@ -927,7 +898,7 @@ input, select, textarea {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: 5em 5em 3em 5em ;
+	/* padding: 5em 5em 3em 5em ; */
 	width: 100%;
 	margin: 0;
 	justify-content: center;
@@ -948,35 +919,6 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	@media screen and (max-width: 1280px) {
-
-		#footer {
-			padding: 4em 4em 2em 4em ;
-		}
-
-	}
-
-	@media screen and (max-width: 480px) {
-
-		#footer {
-			padding: 2.5em 1em 0.5em 1em ;
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			#footer > * {
-				width: 100%;
-				margin-left: 0;
-				margin-bottom: 3em;
-			}
-
-			#footer .copyright {
-				text-align: left;
-			}
-
-	}
-
 /* Wrapper */
 
 	#wrapper {
@@ -986,6 +928,7 @@ input, select, textarea {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		min-height: 100vh;
 	}
 
 		@media screen and (max-width: 480px) {
