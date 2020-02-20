@@ -98,7 +98,9 @@ input, select, textarea {
 	}
 
 	body {
-		min-height: 100vh;
+		/* min-height: 100vh; */
+		height: 100vh;
+		background-attachment: fixed;
 		background-color: #104684;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #09284c, #104684, #396aa3);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #09284c, #104684, #396aa3);
@@ -444,6 +446,8 @@ input, select, textarea {
 
 	section.special, article.special {
 		text-align: center;
+		width: 80vw;
+		min-height: calc(80vw * 2/3.5);
 	}
 
 	header.major {
@@ -562,7 +566,7 @@ input, select, textarea {
 				right: -1px;
 				width: 2px;
 				height: calc(100% + 2em);
-				background: linear-gradient(0deg, #ffffff, #396aa3, #104684, #396aa3, #ffffff);
+				background: linear-gradient(0deg, #396aa3, #104684, #396aa3);
 			}
 			
 			.features li:nth-child(2) {
@@ -922,13 +926,15 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
-		max-width: calc(100% - 4em);
-		margin: 0 auto;
+		/* width: 64em; */
+		/* max-width: calc(100% - 4em); */
+		/* margin: 0 auto; */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		min-height: 100vh;
+		/* min-height: 100vh; */
+		width: 100vw;
+		height: 100vh;
 	}
 
 		@media screen and (max-width: 480px) {
